@@ -1,0 +1,78 @@
+To access an HTML element with a given id name, you can use the getElementById() method
+
+// In programming, it is standard practice to prefix a variable with is or has to indicate that the variable is a boolean.
+
+* Even though you set an input element to be a number, JavaScript receives a string value. 
+You need to write a function to clean the string value and ensure you have a number. */
+
+ /*  const strArray = str.split('');
+    //will use this to store your valid number characters
+    const cleanStrArray = [];
+
+    for(let i =0; i < strArray.length; i++){
+        if (!["+", "-", " "].includes(strArray[i])) {
+            cleanStrArray.push(strArray[i]);
+        }
+- creating a new array is inefficient for memory and runtime performance.
+    } */
+
+    Strings have a .replace() method which allows you to replace characters in the string with another string. .replace takes two arguments. 
+    The first is the character sequence to replace – this can either be a string or a regex pattern. 
+    The second is the string to replace that sequence with. 
+    For example, this would replace all instances of l with 1:
+
+"hello".replace(/l/g, "1");
+
+/* character class \s will match any whitespace character */
+// regex takes the g flag after closing / stands for "global", will tell the pattern to continue looking after it has found a match
+
+Regex has a flag for this, however – the i flag, which stands for "insensitive
+
+e filters out exponential notation such as (such as 1e10). You need to filter those out.
+
+There is a shorthand character class to match any digit: \d. Replace your [0-9] character classes with this shorthand.
+
+//The following example uses the addEventListener method to add a click event to a button. When the button is clicked, the printName function is called.
+
+<button class="btn">Print name</button>
+const button = document.querySelector('.btn');
+function printName() {
+  console.log("Jessica");
+}
+button.addEventListener('click', printName);
+
+The addEventListener method takes two arguments. The first is the event to listen to. (Ex. 'click') The second is the callback function, or the function that runs when the event is triggered.
+
+The insertAdjacentHtml method takes two arguments. The first argument is a string that specifies the position of the inserted element. The second argument is a string containing the HTML to be inserted.
+For the first argument, pass the string "beforeend" to insert the new element as the last child of targetInputContainer.
+
+The list parameter is going to be the result of a query selector, which will return a NodeList. A NodeList is a list of elements like an array. It contains the elements that match the query selector. 
+You will need to loop through these elements in the list.
+
+your isInvalidInput function returns String.match, which is an array of matches or null if no matches are found.
+In JavaScript, values can either be truthy or falsy. A value is truthy if it evaluates to true when converted to a Boolean. A value is falsy if it evaluates to false when converted to a Boolean. null is an example of a falsy value.
+
+In programming, null is meant to represent the absence of a value.
+
+Remember that return ends the execution of a function.
+
+browser event – e is a common name for this parameter.
+The submit event is triggered when the form is submitted. The default action of the submit event is to reload the page. 
+You need to prevent this default action using the preventDefault() method of your e parameter.
+
+Your getCaloriesFromInputs function will set the global error flag to true if an invalid input is detected. 
+Add an if statement to your calculateCalories function that checks the truthiness of your global error flag, and if it is truthy then use return to end the function execution.
+
+You need to know if the user is in a caloric surplus or deficit. A caloric surplus is when you consume more calories than you burn, and a caloric deficit is when you burn more calories than you consume. 
+
+Burning as many calories as you consume is called maintenance, and can be thought of as a surplus or deficit of 0, depending on your goals.
+
+When the user has a calorie deficit, the remainingCalories value will be negative. You don't want to display a negative number in the result string.
+Math.abs() is a built-in JavaScript method that will return the absolute value of a number.
+
+ hr element to create a horizontal line.
+ keep your code clean and readable, you should add this on a new line in the template literal.
+
+ Elements, have a classList property. This property has a .remove() method, which accepts a string representing the class to remove from the element.
+
+ The difference between innerText and innerHTML is that innerText will not render HTML elements, but will display the tags and content as raw text.
